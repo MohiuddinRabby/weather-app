@@ -42,6 +42,15 @@ const Home = () => {
             Search by any city name of any country of the world. Make sure you
             spell correct.
           </p>
+          <div className="text-center">
+            <a
+              href="https://mohiuddin.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mohiuddin
+            </a>
+          </div>
           <div className="row py-5">
             <div className="col-md-6">
               <Result

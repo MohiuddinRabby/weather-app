@@ -10,7 +10,6 @@ import {
   Legend,
 } from "recharts";
 const Chart = (props) => {
-  console.log(props);
   const { temp, humidity, feels_like } = props.result;
   const data = [
     {
