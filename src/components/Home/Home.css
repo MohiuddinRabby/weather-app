@@ -1,28 +1,26 @@
-.container {
+ #home {
   background: url("../../img/bg.jpg");
-  min-height: 600px;
+  min-height: 625px;
   background-size: cover;
-}
-.container .dark-overlay {
-  min-height: 600px;
-  background-color: rgba(0, 0, 0, 0.6);
-}
 
+}
+#home .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 625px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 input[type="text"] {
-  width: 50%;
-  padding: 12px 20px;
+  padding: 8px 40px;
   display: block;
   margin-right: auto;
+  margin-top: 30px;
   margin-left: auto;
   box-sizing: border-box;
   text-align: center;
   font-size: 20px;
+  border-radius: 10px;
 }
-.result{
-  width: 50%;
-  float: left;
-}
-.chart{
-  width: 50%;
-  float: right;
-}
+

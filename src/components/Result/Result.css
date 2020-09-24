@@ -1,10 +1,5 @@
 .result-container {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  box-sizing: border-box;
-  text-align: center;
   background-color: #f5f5f0;
-  width: 400px;
-  height: 200px;
+  text-align: center;
+  min-height: 200px;
 }
