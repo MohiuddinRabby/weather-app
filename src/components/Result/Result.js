@@ -1,11 +1,11 @@
 import React from "react";
 import "./Result.css";
 const Result = (props) => {
-//   console.log(props);
+  // console.log(props);
   const { temp, humidity, feels_like } = props.result;
   return (
     <div className="result-container">
-      <h1>Results</h1>
+      <h1>{props.cityName}</h1>
       {props.weather.map((weth) => (
         <h4 key={weth.id}>{weth.main}</h4>
       ))}
