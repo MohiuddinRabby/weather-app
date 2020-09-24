@@ -5,7 +5,7 @@ import Result from "../Result/Result";
 import Chart from "../Chart/Chart";
 import key from "../../key";
 const Home = () => {
-  const [basicInfo, setBasicInfo] = useState({});
+  const [basicInfo, setBasicInfo] = useState([]);
   const [weather, setWeather] = useState([]);
   const [city, setCity] = useState("dhaka");
   const [text, setText] = useState("");
@@ -13,7 +13,6 @@ const Home = () => {
     Axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${key}`
     ).then((data) => {
-      // console.log(data.data);
       setBasicInfo(data.data.main);
       setWeather(data.data.weather);
     });
@@ -52,7 +51,7 @@ const Home = () => {
               ></Result>
             </div>
             <div className="col-md-6">
-              <Chart></Chart>
+              <Chart result={basicInfo}></Chart>
             </div>
           </div>
         </div>
