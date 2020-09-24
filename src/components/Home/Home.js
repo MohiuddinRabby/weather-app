@@ -3,6 +3,7 @@ import Axios from "axios";
 import "./Home.css";
 import Result from "../Result/Result";
 import Chart from "../Chart/Chart";
+import key from "../../key";
 const Home = () => {
   const [basicInfo, setBasicInfo] = useState({});
   const [weather, setWeather] = useState([]);
@@ -10,7 +11,7 @@ const Home = () => {
   const [text, setText] = useState("");
   useEffect(() => {
     Axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=10615dc32d56f42782f5a50a04f91f30`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${key}`
     ).then((data) => {
       // console.log(data.data);
       setBasicInfo(data.data.main);
